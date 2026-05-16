@@ -6,7 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
-public class Springboot3Application {
+public class Springboot3Application //implements CommandLineRunner
+{
 
 	public static void main(String[] args) {
 		ApplicationContext context=SpringApplication.run(Springboot3Application.class, args);
