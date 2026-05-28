@@ -1,5 +1,7 @@
 package in.cs.main.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -27,6 +29,13 @@ public class AuthController {
 	@GetMapping("/log")
 	public Users loginUser(@RequestParam String email) {
 		return service.getUser(email);
+	}
+	
+	@GetMapping("/all")
+	public List<Users> getAll()
+	{
+		return service.getAllUsers();
+		
 	}
 	
 }

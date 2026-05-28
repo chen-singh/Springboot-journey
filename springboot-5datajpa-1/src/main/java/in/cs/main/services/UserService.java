@@ -1,5 +1,7 @@
 package in.cs.main.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,5 +23,12 @@ public class UserService {
 	public Users getUser(String email) {
 		return userrepo.findByEmail(email);
 		
+	}
+	
+	
+
+	public List<Users> getAllUsers() {
+		// TODO Auto-generated method stub
+		return userrepo.findAll();
 	}
 }
