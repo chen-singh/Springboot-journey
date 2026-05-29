@@ -9,5 +9,7 @@ import in.cs.main.entities.USers;
 public interface UserRepository extends JpaRepository<USers , Integer> {
 
 	USers findByEmail(String email);
+	
+	USers findByUsername(String username);
 
 }
