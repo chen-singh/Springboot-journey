@@ -34,5 +34,6 @@ public class AuthController {
 	public List<USers> getall(){
 		return service.getAll();
 	}
+	
 
 }
