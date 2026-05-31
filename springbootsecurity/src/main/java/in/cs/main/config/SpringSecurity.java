@@ -38,7 +38,7 @@ public class SpringSecurity {
 	public AuthenticationProvider authProvider() {
 
 	    DaoAuthenticationProvider authProvider =
-	            new DaoAuthenticationProvider();
+	            new DaoAuthenticationProvider(userdetails);
 
 	    authProvider.setUserDetailsService(userdetails);
 	    authProvider.setPasswordEncoder(passwordEncoder());
