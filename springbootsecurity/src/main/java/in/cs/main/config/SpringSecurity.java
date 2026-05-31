@@ -49,7 +49,7 @@ public class SpringSecurity {
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		// TODO Auto-generated method stub
-		return new BCryptPasswordEncoder();;
+		return new BCryptPasswordEncoder();
 	}
 
 }
